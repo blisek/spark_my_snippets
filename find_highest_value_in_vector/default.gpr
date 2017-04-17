@@ -1,0 +1,12 @@
+project Default is
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-g", "-O2");
+   end Compiler;
+
+   package Pretty_Printer is
+      for Switches ("max.adb") use ("--mode=prove");
+   end Pretty_Printer;
+
+end Default;
+
